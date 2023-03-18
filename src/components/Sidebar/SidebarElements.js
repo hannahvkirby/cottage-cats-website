@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import {FaTimes} from 'react-icons/fa';
 import  {Link as LinkR} from 'react-router-dom';
-import  {Link as LinkS} from 'react-scroll';
 
 export const SidebarContainer = styled.aside`
     position: fixed; 
@@ -49,24 +48,6 @@ export const SidebarMenu = styled.ul`
     }
 `;
 
-
-export const SidebarLink = styled(LinkS)`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    text-decoration: none;
-    list-style: none;
-    transition: 0.2s ease-in-out;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-
-    &:hover {
-        color: #01bf71;
-        transition: 0.2 ease-in-out;
-    }
-`;
 
 export const SidebarRoute = styled(LinkR)`
     font-size: 1.5rem;

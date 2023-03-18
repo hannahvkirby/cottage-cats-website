@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa'
 import {AiOutlineShoppingCart, AiFillFacebook} from 'react-icons/ai'
 import { Nav, NavbarContainer, NavLogo ,
          MobileIcon, NavCart,
-         NavMenu, FBBtn,
+         NavMenu, FBBtn, RightMenuContainer,
          NavBtn, NavBtnLink} from './NavbarElements'
 
 const Navbar = ({toggle}) => {
@@ -22,22 +22,22 @@ const Navbar = ({toggle}) => {
           </MobileIcon>
           <NavMenu>
             <NavBtn>
-              <NavBtnLink >
+              <NavBtnLink to = "/book">
                 Book a Session
               </NavBtnLink>
             </NavBtn>
             <NavBtn>
-              <NavBtnLink >
+              <NavBtnLink to = "/shop">
                 Shop
               </NavBtnLink>
             </NavBtn>
             <NavBtn>
-              <NavBtnLink >
+              <NavBtnLink to = "/the-cats">
                 The Cats
               </NavBtnLink>
             </NavBtn>
             <NavBtn>
-              <NavBtnLink >
+              <NavBtnLink to = "/reiki-faqs">
                 Reiki FAQs
               </NavBtnLink>
             </NavBtn>
@@ -45,12 +45,14 @@ const Navbar = ({toggle}) => {
           <NavLogo>
             Cottage Cats LLC
           </NavLogo>
-            <FBBtn>
+          <RightMenuContainer>
+            <FBBtn href='https://www.facebook.com/cottagecatsonfb' target={'_blank'}>
                 <AiFillFacebook color="white"/>
             </FBBtn>
-          <NavCart>
+          <NavCart to = "/cart">
             <AiOutlineShoppingCart color="white" />
           </NavCart>
+          </RightMenuContainer>
         </NavbarContainer>
       </Nav>
     </>
